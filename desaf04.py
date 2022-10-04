@@ -1,21 +1,22 @@
+def verificacao(digitado):
+        if digitado:
+            return "Verdadeiro!"
+        else:
+            return "Falso!"
 while True:
-    digitado = input('Digite algo: ')
-    print('O tipo primitivo desse valor é', type(digitado))
-    print(f'Só tem espaços? {digitado.isspace()}')
-    print(f'É um número? {digitado.isnumeric()}')
-    print(f'É alfabético? {digitado.isalpha()}')
-    print(f'É alfanumérico? {digitado.isalnum()}')
-    print(f'Está em maiúsculas? {digitado.isupper()}')
-    print(f'Está em minúsculas? {digitado.islower()}')
-    print(f'Está capitalizada? {digitado.istitle()}')
-    """
-    if digitado.isalpha():
-        print('O valor digitado é Alfabético')
-    elif digitado.isnumeric():
-        print('O valor digitado é Númerico')
-    elif digitado.isalnum():
-        print('O valor digitado é Alfabético e Númerico')
-    elif digitado.isspace():
-        print('O valor digitado é Espaço')
-    else:
-        print('Nenhuma das opções')"""
+    digitado = input('\nDigite algo: ')
+    print('\n-----------------------------------')
+    print(f'O tipo primitivo de ({digitado}) é', type(digitado))
+    print('-----------------------------------')
+    print(f'Só tem espaços? {verificacao(digitado.isspace())}')
+    print(f'É um número? {verificacao(digitado.isnumeric())}')
+    print(f'É alfabético? {verificacao(digitado.isalpha())}')
+    print(f'É alfanumérico? {verificacao(digitado.isalnum())}')
+    print(f'Está em maiúsculas? {verificacao(digitado.isupper())}')
+    print(f'Está em minúsculas? {verificacao(digitado.islower())}')
+    print(f'Está capitalizada? {verificacao(digitado.istitle())}')
+    print('-----------------------------------\n')
+    
+
+
+
